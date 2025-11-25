@@ -1,0 +1,9 @@
+api_auth_nonce:
+  path: /api/auth/nonce
+  controller: App\Controller\Api\AuthController::nonce
+  methods: [GET]
+
+api_auth_verify:
+  path: /api/auth/verify
+  controller: App\Controller\Api\AuthController::verify
+  methods: [POST]

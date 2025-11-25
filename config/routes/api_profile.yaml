@@ -1,0 +1,9 @@
+api_profile_me:
+  path: /api/me
+  controller: App\Controller\Api\ProfileController::me
+  methods: [GET]
+
+api_profile_update:
+  path: /api/me
+  controller: App\Controller\Api\ProfileController::update
+  methods: [PATCH]

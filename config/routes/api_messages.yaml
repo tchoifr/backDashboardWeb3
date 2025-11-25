@@ -1,0 +1,23 @@
+api_conversations_list:
+  path: /api/conversations
+  controller: App\Controller\Api\MessageController::conversations
+  methods: [GET]
+
+api_conversations_create:
+  path: /api/conversations
+  controller: App\Controller\Api\MessageController::create
+  methods: [POST]
+
+api_conversation_detail:
+  path: /api/conversations/{id}/messages
+  controller: App\Controller\Api\MessageController::conversation
+  methods: [GET]
+  requirements:
+    id: '\\d+'
+
+api_conversation_send:
+  path: /api/conversations/{id}/messages
+  controller: App\Controller\Api\MessageController::send
+  methods: [POST]
+  requirements:
+    id: '\\d+'

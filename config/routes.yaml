@@ -1,0 +1,26 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_auth:
+    resource: api_auth.yaml
+
+api_dashboard:
+    resource: api_dashboard.yaml
+
+api_jobs:
+    resource: api_jobs.yaml
+
+api_contracts:
+    resource: api_contracts.yaml
+
+api_dao:
+    resource: api_dao.yaml
+
+api_messages:
+    resource: api_messages.yaml
+
+api_profile:
+    resource: api_profile.yaml

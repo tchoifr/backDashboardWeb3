@@ -1,0 +1,23 @@
+api_dao_disputes:
+  path: /api/dao/disputes
+  controller: App\Controller\Api\DaoController::disputes
+  methods: [GET]
+
+api_dao_dispute_detail:
+  path: /api/dao/disputes/{id}
+  controller: App\Controller\Api\DaoController::detail
+  methods: [GET]
+  requirements:
+    id: '\\d+'
+
+api_dao_create_dispute:
+  path: /api/dao/disputes
+  controller: App\Controller\Api\DaoController::create
+  methods: [POST]
+
+api_dao_vote:
+  path: /api/dao/disputes/{id}/vote
+  controller: App\Controller\Api\DaoController::vote
+  methods: [POST]
+  requirements:
+    id: '\\d+'

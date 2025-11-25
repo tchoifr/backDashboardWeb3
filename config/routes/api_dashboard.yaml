@@ -1,0 +1,4 @@
+api_dashboard_overview:
+  path: /api/dashboard/overview
+  controller: App\Controller\Api\DashboardController::overview
+  methods: [GET]

@@ -1,0 +1,42 @@
+api_jobs_list:
+  path: /api/jobs
+  controller: App\Controller\Api\JobController::list
+  methods: [GET]
+
+api_jobs_create:
+  path: /api/jobs
+  controller: App\Controller\Api\JobController::create
+  methods: [POST]
+
+api_jobs_detail:
+  path: /api/jobs/{id}
+  controller: App\Controller\Api\JobController::detail
+  methods: [GET]
+  requirements:
+    id: '\\d+'
+
+api_jobs_update:
+  path: /api/jobs/{id}
+  controller: App\Controller\Api\JobController::update
+  methods: [PATCH]
+  requirements:
+    id: '\\d+'
+
+api_jobs_apply:
+  path: /api/jobs/{id}/apply
+  controller: App\Controller\Api\JobController::apply
+  methods: [POST]
+  requirements:
+    id: '\\d+'
+
+api_jobs_applications:
+  path: /api/jobs/{id}/applications
+  controller: App\Controller\Api\JobController::applications
+  methods: [GET]
+  requirements:
+    id: '\\d+'
+
+api_my_jobs:
+  path: /api/my-jobs
+  controller: App\Controller\Api\JobController::myJobs
+  methods: [GET]

@@ -1,0 +1,23 @@
+api_contracts_list:
+  path: /api/contracts
+  controller: App\Controller\Api\ContractController::index
+  methods: [GET]
+
+api_contracts_create:
+  path: /api/contracts
+  controller: App\Controller\Api\ContractController::create
+  methods: [POST]
+
+api_contracts_detail:
+  path: /api/contracts/{id}
+  controller: App\Controller\Api\ContractController::detail
+  methods: [GET]
+  requirements:
+    id: '\\d+'
+
+api_contracts_update:
+  path: /api/contracts/{id}
+  controller: App\Controller\Api\ContractController::update
+  methods: [PATCH]
+  requirements:
+    id: '\\d+'
